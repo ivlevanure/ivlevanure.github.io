@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+a{ 
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    width: 100%;
+    background: #FAF4FF;
+    position: fixed;
+    opacity: 90%;
+    
+}
+.logo{
+    cursor: pointer;
+    
+    margin-top: 10px;
+    margin-left: 12%;
+    
+}
+.logo img{
+    padding-bottom: 20px;
+    max-width: 60px;
+    max-height: 60px;
+}
+nav{
+    margin-top: 30px;
+    margin-left: 9%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topnav a{
+       
+      background: #5F6282;
+    margin-right: 30px;
+    color:white;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.topnav a:hover{
+    background-color:#A67AA0;
+}
+.topnav .icon{
+    display:none;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main .welcome{
+   
+    background-image: linear-gradient(270deg, rgba(161, 71, 148, 0.5) 0%, rgba(42, 49, 113, 0.5) 100%), url(fon.JPG);
+    text-align: center;
+    padding: 17% 0 28% 0;
+}
+main .welcome p{
+    padding: 55px 350px 0 350px;
+    
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+main .welcome h1{
+    padding: 0 350px 0 350px;
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.web{
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+}
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+
+
+
+main .about{
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+.aboutright{
+    margin-left: 175px;
+}
+.aboutright h1{
+    display: inline-block;
+    border-bottom: 3px solid red;
+    padding-bottom: 20px;
+}
+.aboutright p{
+    margin: 30px 0 50px 0;
+    color: yellowgreen;
+}
+
+.aboutright li{
+    background: url() 0px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.imgadap{
+    min-width: 100%;
+}
+
+@media screen and (max-width:990px){
+.topnav a{
+    display: none;
+    
+}
+.topnav a.icon{
+    float:right;
+    margin-top: -17px;
+    display: block;
+    color: white;
+    font-size: 25px;
+}
+nav{
+    width: 100%;
+    
+}
+.topnav.responsive{
+    position: relative;
+    top:50px;
+    left:-200px;
+}
+header .topnav.responsive{
+    height: 340px;
+}
+.topnav.responsive a{
+    
+    display:block;
+
+}
+.topnav.responsive a.icon{
+    position: absolute;
+    top:-50px;
+    right:-200px;
+}
+
+main.welcome{
+    padding: 50px 0 50px 0;
+}
+
+main.welcome p{
+    font-size: 14px;
+}
+main.welcome h1{
+    font-size: 24px;
+
+}
+.imgadap{
+    max-width: 100%;
+}
+.about{
+    flex-direction: column;
+}
+.aboutright{
+    text-align: center;
+    margin-left: 0;
+}
+
+.aboutright li{
+    text-align: left;
+}
+.aboutright h1{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+}
+
+
+@media screen and (max-width:360px){
+    .topnav a{
+        display: none;
+        
+    }
+    .topnav a.icon{
+        float:right;
+        margin-top: -17px;
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
+    nav{
+        width: 100%;
+        
+    }
+    .topnav.responsive{
+        position: relative;
+        top:50px;
+        left:-200px;
+    }
+    header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a{
+        
+        display:block;
+    
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top:-50px;
+        right:-200px;
+    }
+    
+    main.welcome{
+        padding: 50px 0 50px 0;
+    }
+    
+    main.welcome p{
+        font-size: 14px;
+    }
+    main.welcome h1{
+        font-size: 24px;
+    
+    }
+    .imgadap{
+        max-width: 100%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .aboutright{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .aboutright li{
+        text-align: left;
+    }
+    .aboutright h1{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    
+    }
