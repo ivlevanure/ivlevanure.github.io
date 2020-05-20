@@ -1,0 +1,674 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+	color: #F3F4F5;
+    background-color: #EFEFEF;
+}
+
+/*-------------
+	Layout
+--------------*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	font: 400 15px/1.4 'Open Sans',sans-serif;
+}
+
+
+header{
+	
+	flex: 0 0 auto;
+}
+
+.main-content{
+
+	flex: 1 0 auto;
+}
+
+footer{
+	
+	flex: 0 0 auto;
+}
+
+
+/*-------------
+	Header
+--------------*/
+
+header {
+	width: 100%;
+	position: fixed;
+	background-color: #27313C;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	
+	box-sizing: border-box;	
+}
+
+header .header-limiter {
+	
+	text-align: center;
+	
+}
+
+/* Logo */
+
+.logo{
+	float: left;
+	margin-top: 20px;
+	margin-left: 12%;
+}
+
+.logo img {
+	
+   
+	padding-bottom: 20px;
+    max-width: 70px;
+    max-height: 70px;
+    position: relative;
+    display: flex;
+}
+
+
+/* The header links */
+
+ul{
+	padding: 0;
+	list-style: none;
+	position: relative;
+	margin: 0;
+}
+ul li{
+	margin: 0px -7px 0 0 ;
+	display: inline-block;
+}
+
+header .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header .header-limiter nav{
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 12%;
+   	
+}
+
+header .header-limiter nav a{
+	min-width: 160px;
+    min-height: 50px;
+	margin-right: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.9;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 12px 21px 13px 21px;
+    background-color: #5F6282;
+}
+
+header .header-limiter nav a:hover{
+	background-color: #A67AA0;
+	cursor: pointer;
+	opacity: 1;
+	
+}
+
+ nav ul ul{
+	display: none;
+position: absolute;
+	top: 100%;
+}
+
+ nav ul li:hover > ul{
+	display: inherit;
+}
+nav ul ul li {
+	margin: 0;
+	min-width: 160px;
+	float: none;
+	display: list-item;
+	position: relative;
+	margin-left: -190px;
+} 
+
+
+
+
+/* Making the header responsive */
+
+
+
+
+/*--------------------
+	Main Content
+--------------------*/
+
+.main-content{
+	color: #34365F;
+	background: linear-gradient(270deg, rgba(161, 71, 148, 0.8) 0%, rgba(42, 49, 113, 0.8) 100%);
+	padding: 230px 50px;
+}
+
+.card {
+	max-width: 920px;
+	margin: 0 auto;
+	background: #FAF4FF;
+	height: 100%;
+	padding: 60px 70px;
+	text-align: center;
+}
+
+.card h1{
+	margin-bottom: 25px;
+	font-size: 40px;
+}
+
+.card h3{
+	
+	text-align: center;
+	font-weight: normal;
+	color: #636588;
+	font-size: 16px;
+	max-width: 600px;
+	line-height: 1.6;
+	margin: 0 auto 35px;
+}
+.card h2{
+	color:#AB4EA4 ;
+	}
+.card p{
+	
+	text-align: left;
+	margin: 20px 0 20px;
+	line-height: 1.5;
+}
+
+.card #add-content{
+	display: inline-block;
+    padding: 15px 40px;
+    background: #AB4EA4;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.card #add-content:hover{
+	display: inline-block;
+    padding: 15px 40px;
+    background: rgb(211, 104, 202);
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.card .dummy-content p,
+.card .dummy-content img,.card .dummy-content h2,.card .dummy-content a{
+	display: none;
+	
+}
+.card img .prim{
+	
+	width: 70%;
+	
+}
+.card .dummy-content img{
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+.card a{
+	
+	text-decoration: none;
+	color: rgb(165, 165, 165);
+}
+.card img{
+
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 70%;
+	margin-bottom: 40px;
+}
+
+#ToTop {
+	background-color: #FAF4FF;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	border-radius: 3px;
+		
+}
+#ToTop a {
+	text-decoration: none;
+	height: 30px;
+	
+}
+#ToTop a:hover {
+ color: #AB4EA4;
+}
+aside {
+	position: fixed;
+	right:0px; bottom: 0px;
+}
+
+/*--------------------
+	Footer styles
+--------------------*/
+
+footer{
+	background: #241C3C;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	width: 100%;
+	text-align: center;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+}
+
+footer .footer-limiter {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+footer .footer-center p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	@media screen and (max-width: 835px) {
+		nav{
+			width: 100%;}
+		.logo{
+			
+			margin-top: 20px;
+			align-items: center;
+			padding-left: 250px;
+			
+		}
+		
+		.logo img {
+			
+			
+
+			cursor: pointer;
+			max-width: 70px;
+			max-height: 70px;
+			position: relative;
+		}
+		nav{
+			
+			display: flex;
+			justify-content: center;
+		}
+		header .header-limiter nav a{
+			min-width: 40px;
+			min-height: 13px;
+			margin-right: 30px;
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			font-size: 16px;
+			opacity: 0.9;
+			font-weight: bold;
+			border-radius: 3px;
+			padding: 8px 21px 8px 21px;
+			background-color: #5F6282;
+		}
+		
+		nav ul{
+			margin-top: 0px;
+			display: flex;
+			justify-content: center;
+			padding: 0 0px 0 210px;
+			list-style: none;
+			position: relative;
+			margin: 0;
+		}
+		nav ul ul li {
+			
+			min-width: 160px;
+			float: none;
+			display: list-item;
+			position: relative;
+			margin-left: -250px;
+		} 
+	
+	}
+
+@media screen and  (max-width: 640px) {
+	nav{
+		width: 100%;}
+	.logo{
+		
+		margin-top: 20px;
+		align-items: center;
+		padding-left: 200px;
+	}
+	
+	.logo img {
+		cursor: pointer;
+		max-width: 70px;
+		max-height: 70px;
+		position: relative;
+	}
+	nav{
+		
+		display: flex;
+		justify-content: center;
+	}
+	header .header-limiter nav a{
+		min-width: 40px;
+		min-height: 13px;
+		margin-right: 30px;
+		display: inline-block;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 12px;
+		opacity: 0.9;
+		font-weight: bold;
+		border-radius: 3px;
+		padding: 8px 21px 8px 21px;
+		background-color: #5F6282;
+	}
+	
+	nav ul{
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		padding: 0 0px 0 105px;
+		list-style: none;
+		position: relative;
+		margin: 0;
+	}
+	
+	nav ul ul li {
+		margin: 0;
+		min-width: 160px;
+		float: none;
+		display: list-item;
+		position: relative;
+		margin-left: -120px;
+	} 
+
+	
+	.card {
+		max-width: 920px;
+		margin: 0 auto;
+		background: #FAF4FF;
+		height: 100%;
+		padding: 30px 30px;
+		text-align: center;
+	}
+	.card h1{
+		margin-bottom: 25px;
+		font-size: 24px;
+		
+	}
+	
+	.card h3{
+		
+		text-align: center;
+		font-weight: normal;
+		color: #636588;
+		font-size: 14px;
+		max-width: 600px;
+		line-height: 1.6;
+		margin: 0 auto 35px;
+	}
+	
+	.card p{
+		font-size: 14px;
+		text-align: left;
+		margin: 20px 0 20px;
+		line-height: 1.5;
+	}
+	
+	.card #add-content{
+		display: inline-block;
+		padding: 15px 40px;
+		background: #AB4EA4;
+		border-radius: 3px;
+		text-decoration: none;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	footer .footer-left,
+	footer .footer-right{
+		text-align: center;
+	}
+
+	footer .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	footer .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+
+@media screen and (max-width: 550px) {
+	nav{
+		width: 100%;}
+	.logo{
+		
+		margin-top: 20px;
+		align-items: center;
+		padding-left: 150px;
+	}
+	
+	.logo img {
+		cursor: pointer;
+		max-width: 70px;
+		max-height: 70px;
+		position: relative;
+	}
+	nav{
+		
+		display: flex;
+		justify-content: center;
+	}
+	header .header-limiter nav a{
+		min-width: 40px;
+		min-height: 13px;
+		margin-right: 30px;
+		display: inline-block;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 12px;
+		opacity: 0.9;
+		font-weight: bold;
+		border-radius: 3px;
+		padding: 8px 21px 8px 21px;
+		background-color: #5F6282;
+	}
+	
+	nav ul{
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		padding: 0 0px 0 90px;
+		list-style: none;
+		position: relative;
+		margin: 0;
+	}
+	nav ul ul li {
+		margin: 0;
+		min-width: 160px;
+		float: none;
+		display: list-item;
+		position: relative;
+		margin-left: -125px;
+	} 
+
+	
+	.card {
+		max-width: 920px;
+		margin: 0 auto;
+		background: #FAF4FF;
+		height: 100%;
+		padding: 30px 30px;
+		text-align: center;
+	}
+	.card h1{
+		margin-bottom: 25px;
+		font-size: 24px;
+		
+	}
+	
+	.card h3{
+		
+		text-align: center;
+		font-weight: normal;
+		color: #636588;
+		font-size: 14px;
+		max-width: 600px;
+		line-height: 1.6;
+		margin: 0 auto 35px;
+	}
+	
+	.card p{
+		font-size: 14px;
+		text-align: left;
+		margin: 20px 0 20px;
+		line-height: 1.5;
+	}
+	
+	.card #add-content{
+		display: inline-block;
+		padding: 15px 40px;
+		background: #AB4EA4;
+		border-radius: 3px;
+		text-decoration: none;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 360px) {
+	nav{
+		width: 100%;}
+	.logo{
+		
+		margin-top: 20px;
+		align-items: center;
+		margin-left: 0px;
+	}
+	
+	.logo img {
+		cursor: pointer;
+		max-width: 70px;
+		max-height: 70px;
+		position: relative;
+	}
+	nav{
+		
+		display: flex;
+		justify-content: center;
+	}
+	header .header-limiter nav a{
+		min-width: 40px;
+		min-height: 13px;
+		margin-right: 30px;
+		display: inline-block;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 11px;
+		opacity: 0.9;
+		font-weight: bold;
+		border-radius: 3px;
+		padding: 8px 21px 8px 21px;
+		background-color: #5F6282;
+	}
+	
+	nav ul{
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+		padding: 0 0px 0 105px;
+		list-style: none;
+		position: relative;
+		margin: 0;
+	}
+	nav ul ul li {
+		margin: 0;
+		min-width: 160px;
+		float: none;
+		display: list-item;
+		position: relative;
+		margin-left: -125px;
+	} 
+
+	
+	.card {
+		max-width: 920px;
+		margin: 0 auto;
+		background: #FAF4FF;
+		height: 100%;
+		padding: 30px 30px;
+		text-align: center;
+	}
+	.card h1{
+		margin-bottom: 25px;
+		font-size: 24px;
+		
+	}
+	
+	.card h3{
+		
+		text-align: center;
+		font-weight: normal;
+		color: #636588;
+		font-size: 14px;
+		max-width: 600px;
+		line-height: 1.6;
+		margin: 0 auto 35px;
+	}
+	
+	.card p{
+		font-size: 12px;
+		text-align: left;
+		margin: 20px 0 20px;
+		line-height: 1.5;
+	}
+	
+	.card #add-content{
+		display: inline-block;
+		padding: 15px 40px;
+		background: #AB4EA4;
+		border-radius: 3px;
+		text-decoration: none;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	.card img{
+
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		width: 90%;
+		margin-bottom: 40px;
+	}
+	.prim{
+		margin-top: 20px;
+		width: 90%;
+		
+	}
+}
