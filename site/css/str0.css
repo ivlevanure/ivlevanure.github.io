@@ -162,7 +162,7 @@ main{
 
 main .welcome{
    
-    background-image: linear-gradient(270deg, rgba(161, 71, 148, 0.5) 0%, rgba(42, 49, 113, 0.5) 100%), url(fon.JPG);
+    background-image: linear-gradient(270deg, rgba(161, 71, 148, 0.5) 0%, rgba(42, 49, 113, 0.5) 100%), url(../img/fon.jpg);
 	background-position: center center;
 	background-size:cover;
 	text-align: center;
